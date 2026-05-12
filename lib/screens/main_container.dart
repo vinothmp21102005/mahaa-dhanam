@@ -44,8 +44,8 @@ class _MainContainerState extends State<MainContainer> {
             });
           },
           type: BottomNavigationBarType.fixed,
-          backgroundColor: AppColors.backgroundWhite,
-          selectedItemColor: AppColors.darkGreen,
+          backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+          selectedItemColor: Theme.of(context).brightness == Brightness.dark ? AppColors.gold : AppColors.darkGreen,
           unselectedItemColor: AppColors.darkGrey,
           selectedLabelStyle: const TextStyle(fontWeight: FontWeight.bold),
           items: const [

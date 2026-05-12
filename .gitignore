@@ -1,15 +1,86 @@
-*.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
 .DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
-local.properties
+.atom/
+.buildlog/
+.history
+.svn/
+.vscode/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# The Python extension for Visual Studio Code creates this folder.
+.ptvs/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+/build/
+
+# Android related
+**/android/local.properties
+**/android/app/debug/
+**/android/app/profile/
+**/android/app/release/
+
+# iOS related
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/flutter_export_environment.sh
+**/ios/Flutter/App.framework
+**/ios/Flutter/App.podspec
+**/ios/Flutter/App.framework.zip
+**/ios/Flutter/App.framework.dSYM.zip
+**/ios/Flutter/App.framework.dSYM
+**/ios/Scanner.framework
+**/ios/Scanner.framework.zip
+**/ios/Scanner.framework.dSYM.zip
+**/ios/Scanner.framework.dSYM
+**/ios/Runner/GeneratedPluginRegistrant.h
+**/ios/Runner/GeneratedPluginRegistrant.m
+**/ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json
+**/ios/Runner/Assets.xcassets/AppIcon.appiconset/*.png
+**/ios/Runner/Assets.xcassets/AppIcon.appiconset/*.jpg
+**/ios/Runner/Assets.xcassets/AppIcon.appiconset/*.pdf
+**/ios/Pods/
+**/ios/.symlinks/
+**/ios/Flutter/Config.xcconfig
+**/ios/ServiceDefinitions.json
+**/ios/Runner/GoogleService-Info.plist
+
+# Symbolication related
+app.*.symbols
+
+# Executable for GNU/Linux
+**/build/linux/
+
+# Flutter Debugger related
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+
+# Web related
+lib/generated_plugin_registrant.dart
+
+# macOS related
+**/build/macos/
+
+# Windows related
+**/build/windows/
+
+# Exceptions to above rules
+!**/ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json

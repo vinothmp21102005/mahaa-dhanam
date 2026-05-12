@@ -70,24 +70,24 @@ class ProfileScreen extends StatelessWidget {
             const SizedBox(height: 40),
             
             // Info Cards
-            _buildInfoCard(Icons.badge, 'Member ID', 'MD-2026-08912'),
+            _buildInfoCard(context, Icons.badge, 'Member ID', 'MD-2026-08912'),
             const SizedBox(height: 16),
-            _buildInfoCard(Icons.phone, 'Phone Number', '+91 98765 43210'),
+            _buildInfoCard(context, Icons.phone, 'Phone Number', '+91 98765 43210'),
             const SizedBox(height: 16),
-            _buildInfoCard(Icons.email, 'Email Address', 'vinoth@example.com'),
+            _buildInfoCard(context, Icons.email, 'Email Address', 'vinoth@example.com'),
             const SizedBox(height: 16),
-            _buildInfoCard(Icons.calendar_today, 'Joining Date', '15 January 2026'),
+            _buildInfoCard(context, Icons.calendar_today, 'Joining Date', '15 January 2026'),
           ],
         ),
       ),
     );
   }
 
-  Widget _buildInfoCard(IconData icon, String label, String value) {
+  Widget _buildInfoCard(BuildContext context, IconData icon, String label, String value) {
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: Theme.of(context).cardColor,
         borderRadius: BorderRadius.circular(12),
         boxShadow: [
           BoxShadow(
